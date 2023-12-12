@@ -24,7 +24,7 @@ function Navbar(props) {
     window.addEventListener("scroll" ,setNavFixed)
 
     let navClass = ' flex justify-between items-center h-16  w-full mx-auto px-4 text-white fixed z-10 '
-    let liClass = 'p-4'
+    let liClass = 'p-4 flex flex-col relative '
 
     if(isScroll){
         navClass += 'bg-white ease-in-out duration-300'
@@ -36,7 +36,8 @@ function Navbar(props) {
         <div className={navClass}>
             <h1 className='w-full text-3xl font-bold text-[#ff5100]  '>TMRS</h1>
             <ul className=' hidden md:flex md:items-center'>
-                <li className={liClass}>Home</li>
+                
+                <li className={liClass}><a href="#" >Home</a></li>        
                 <li className={liClass}>Home</li>
                 <li className={liClass}>Home</li>
                 <li className={liClass}>Home</li>
